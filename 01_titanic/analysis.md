@@ -172,12 +172,12 @@
 
 
 ----------------------
-1. Análise de dados. Quais são as colunas e o que elas apresentam?
+1. Análise de dados.
+   
+1.1 Quais são as colunas e o que elas apresentam?
    
 > head()
 > info()
-> ------
-> 
 
 Colunas: É possível verificar que existem 7 colunas numéricas e 5 colunas não numéricas.
 .. 
@@ -186,32 +186,36 @@ Amostras: São 891 amostras disponíveis.
 ### Numéricas:
 
 **PassengerId**
-- [H] Não se repete
+Identificação dos passageiros. Cada passageiro tem uma identificação única.
+- [F] Não se repete
 - [H] Não é relevante
 
 **Survived**
+Quem sobreviveu? 0 foi de vala, 1 se salvou.
 - [F] Nosso target
 
 **Pclass**
+Classe dos magrões. Pode ser 1a, 2a ou 3a classe.
 - Correlações
 
 **Age** toInt
-- Correlações
+- Não se correlaciona com nenhuma var numérica
+- Problema com NULL ->> pegar a média da classe, sexo e se morreu
 - [F] Média de idade é de 30 anos
 - [F] 75% das pessoas têm menos de 38 anos
 
 **SibSp**
-- Correlações
+- Não se correlaciona com nenhuma var numérica
 - [F] 50% das pessoas não têm SibSp
   
 **Parch**
-- Correlações
+- Não se correlaciona com nenhuma var numérica
 - [F] 75% não tem Pais ou filhos
 - [H] Essa feature não é relevante
 - [F] A variância é muito baixa, e média 0.4
 
 **Fare** toInt
-- Correlações
+- Não se correlaciona com nenhuma var numérica
 - [F] Pelo menos 75% pagou menos de 31 na passagem
 - [F] A média da passagem é 32
   
@@ -220,8 +224,10 @@ Amostras: São 891 amostras disponíveis.
 **Name** Processo
 - Talvez os títulos e/ou sobrenomes sejam importantes
 
-**Sex** Dummy
-- Correlações
+**Sex** toInt
+- [OK] Transformação direta!
+- [F] Tem mais homens do que mulheres
+- [F] Relação alta entre quem sobrevive e sexo
 
 **Ticket** ?
 - Correlações
@@ -231,6 +237,44 @@ Amostras: São 891 amostras disponíveis.
   
 **Embarked** Dummy
 - Correlações
+
+
+## Statements
+
+Para identificar correlações fortes ou fracas entre as variáveis.
+Para identificar a frequência de cada categoria.
+Para identificar tendências, padrões e outliers.
+
+
+- Predicting survival status in the Titanic ship disaster. Its a Binary Classification problem
+- Training dataset have minimal feature hence we need to create feature cross by understanding business. Refer https://developers.google.com/machine-learning/crash-course/feature-crosses/video-lecture for more details
+- Due to minimal samples in training dataset generate synthetic data for more accuracy but we are not generating here to show originiality
+- Check each feature correlation with survival
+
+
+
+
+## Correlações numéricas
+> sns.pairplot(df)
+> sns.heatmap(df.corr(), annot=True)
+
+- [H] Não há correlação alguma entre quaiquer variáveis numéricas
+- [F] A maior correlação é entre Parch e SibSp
+- [F] Correlaçao alta entre Survived e Fare
+- [F] A menor correlação é entre Pclass e Fare
+- [F] Correlação baixa entre Pclass e Age
+- [F] Correlação baixa entre Survived e Pclass
+
+## Análise Categórica
+
+- [F] Muito mais homens morrem do que mulheres
+- [F] A cada 1 homem vivo, há 4 mortos
+- [F] A cada 1 mulher morta, há 3 vivas
+- [F] Pessoas da terceira classe morrem mais
+- [F] O embarque C tem relação com valor de ticket
+- [F] O embarque Q e S não têm correlação com valor de ticket
+- [F] O embarque Q tem relação com Pclass
+
 
 ## Todo
 ### Análise inicial
