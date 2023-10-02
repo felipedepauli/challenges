@@ -1,65 +1,55 @@
 # Método
 
->> Data Gathering
->> Preparing Data
-- Machine learning models are only capable of handling numeric features; thus ordinal and categorical data has to be converted into numeric features.
-- When missing data is encountered in a dataset, the column or row of data is generally removed based on the need of the model. However, if there’re lots of missing values in a dataset, this technique shouldn’t be performed.
-- In the event of encountering missing data in a dataset, the missing part is often manually filled. The mean, median or the highest frequency value is most commonly used.
->> Exploratory data analysis (EDA)
-- Identifying errors that have been made at the time of data collection and missing data areas.
-- Identifying the most influential variables in a dataset.
-- Mapping out the underlying structure of that data.
-- Listing and highlighting outliers and anomalies.
-- Estimating parameters, defining margins of error, or determining confidence intervals.
-- Testing previously proposed hypotheses.
+# Metodologia de Machine Learning
 
+## 1. Definição do Problema e Estratégia
+1.1 Entender o que os dados representam e suas características.
+1.2 Definir claramente o problema e o objetivo.
+1.3 Propor uma solução inicial.
 
-### 1. Estratégia
-- 1.1 Ler e entender o que os dados representam e suas características
-- 1.2 Entender o problema e o objetivo
-- 1.3 Desenhar uma proposta de solução
+## 2. Carregamento e Visualização Inicial dos Dados
+2.1 Carregar os dados e visualizar as primeiras linhas.
+2.2 Verificar tipos de dados e valores nulos.
+2.3 Confirmar unicidade em dados que devem ser únicos.
 
-### 2. Visualização e Exploração dos Dados
-- 2.1 Executar comandos para visualizar os dados.
-- 2.2 Documentar observações e características dos dados (análise qualitativa).
-- 2.3 Identificar valores nulos, outliers e inconsistências (tipos e conteúdo).
-- 2.4 Confirmar unicidade em dados que devem ser únicos
-  
-### 3. Pré-processamento e Limpeza dos Dados
-- 3.1 Definir ações de tratamento de dados.
-- 3.2 Remover colunas desnecessárias.
-- 3.3 Mudar tipos de variáveis, buscando int, float, categóricos, nesta ordem.
-- 3.4 Tratar valores nulos e outliers (poda).
-- 3.5 Criar novas features óbvias.
-  
-### 4. Criação de Hipóteses e Análises
-- 4.1 Formular hipóteses sobre os dados (ex: pessoas nascidas em 1980 têm maior probabilidade de…).
-- 4.2 Testar as hipóteses através de análises estatísticas e exploração de dados.
-- 4.3 Verificar correlações entre diferentes variáveis.
-- 4.4 Criar novas features por correlação.
-  
-### 5. Visualização Avançada
-- 5.1 Criar gráficos e visualizações para entender padrões e relações finais.
-- 5.2 Use as visualizações para presumir possíveis modelos a serem utilizados. Elencá-los.
-- 5.3 Se necessário, realizar ajustes na estratégia e voltar para ações anteriores.
+## 3. Análise Exploratória de Dados (EDA)
+3.1 Estatísticas descritivas e distribuições.
+3.2 Identificar e tratar valores nulos.
+3.3 Identificar e tratar outliers.
+3.4 Visualizar relações e correlações entre variáveis.
 
-### 6. Preparação de dados
-- 6.1 Criar as estruturas para treinamento
-  
-### 7. Seleção e Treinamento de Modelos
-- 7.1 Executar modelos com parâmetros padrões e compará-los.
-- 7.2 Escolhe os três modelos que parecem ser os mais adequados.
-- 7.3 Treinar modelos com parâmetros ajustados e validar o desempenho de cada um.
-- 7.4 Escolher um e realizar ajuste de hiperparâmetros e otimizar o modelo escolhido.
-  
-### 8. Avaliação e Implementação
-- 8.1 Avalie o modelo final com base em métricas de desempenho.
-- 8.2 Implemente o modelo e faça previsões.
-- 8.3 Prepare e submeta os resultados, se necessário.
-  
-### 9. Documentação e Revisão
-- 9.1 Documente todo o processo, decisões tomadas e resultados obtidos (dados históricos).
-- 9.2 Revise o workflow e faça ajustes conforme necessário para futuros projetos.
+## 4. Pré-processamento e Engenharia de Features
+4.1 Conversão de tipos de dados (categóricos para numéricos, etc.).
+4.2 Criação de novas features baseadas em insights da EDA.
+4.3 Normalização ou padronização de features, se necessário.
+
+## 5. Hipóteses e Testes Estatísticos
+5.1 Formular e documentar hipóteses.
+5.2 Realizar testes estatísticos para validar ou refutar hipóteses.
+
+## 6. Modelagem
+6.1 Dividir os dados em conjuntos de treino e teste.
+6.2 Selecionar e treinar modelos iniciais.
+6.3 Avaliar e comparar o desempenho dos modelos.
+6.4 Ajuste de hiperparâmetros e otimização.
+
+## 7. Avaliação Final e Implementação
+7.1 Avaliar o modelo final em um conjunto de teste ou validação.
+7.2 Interpretar os resultados e métricas.
+7.3 Implementar o modelo para fazer previsões em novos dados.
+
+## 8. Documentação e Iteração
+8.1 Documentar todo o processo, decisões, resultados e métricas.
+8.2 Revisar a metodologia e identificar áreas de melhoria.
+8.3 Iterar: voltar a etapas anteriores se necessário para refinar a análise e o modelo.
+
+---
+
+**Observações:**
+- Mantenha consistência entre transformações nos conjuntos de treino e teste.
+- Modularize o código, especialmente funções de pré-processamento, para reutilização.
+- Documente insights, decisões e justificativas ao longo do notebook para referência futura.
+
 
 
 Observações:
