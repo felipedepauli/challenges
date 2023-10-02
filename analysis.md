@@ -1,5 +1,19 @@
 # Método
 
+>> Data Gathering
+>> Preparing Data
+- Machine learning models are only capable of handling numeric features; thus ordinal and categorical data has to be converted into numeric features.
+- When missing data is encountered in a dataset, the column or row of data is generally removed based on the need of the model. However, if there’re lots of missing values in a dataset, this technique shouldn’t be performed.
+- In the event of encountering missing data in a dataset, the missing part is often manually filled. The mean, median or the highest frequency value is most commonly used.
+>> Exploratory data analysis (EDA)
+- Identifying errors that have been made at the time of data collection and missing data areas.
+- Identifying the most influential variables in a dataset.
+- Mapping out the underlying structure of that data.
+- Listing and highlighting outliers and anomalies.
+- Estimating parameters, defining margins of error, or determining confidence intervals.
+- Testing previously proposed hypotheses.
+
+
 ### 1. Estratégia
 - 1.1 Ler e entender o que os dados representam e suas características
 - 1.2 Entender o problema e o objetivo
@@ -151,3 +165,7 @@ Observações:
   sns.scatterplot(x='column1', y='column2', data=df)
   ```
   Substitua `'column1'` e `'column2'` pelos nomes das colunas numéricas.
+
+
+Corr-> 
+http://www.sthda.com/english/wiki/visualize-correlation-matrix-using-correlogram
