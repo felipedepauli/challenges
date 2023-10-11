@@ -3,40 +3,44 @@
 # Metodologia de Machine Learning
 
 ## 1. Definição do Problema e Estratégia
-1.1 Entender o que os dados representam e suas características.
-1.2 Definir claramente o problema e o objetivo.
+1.1 Definir claramente o problema e o objetivo.
+1.2 Entender o que os dados representam e suas características.
 1.3 Propor uma solução inicial.
 
-## 2. Carregamento e Visualização Inicial dos Dados
-2.1 Carregar os dados e visualizar as primeiras linhas.
-2.2 Verificar tipos de dados e valores nulos.
-2.3 Confirmar unicidade em dados que devem ser únicos.
+## 2. Gather the Data
+2.1 Procurar os dados (datasets)
+2.2 Definir o tipo de dados
+2.3 Prepará-los para importação nos notebooks
 
-## 3. Análise Exploratória de Dados (EDA)
-3.1 Estatísticas descritivas e distribuições.
-3.2 Identificar e tratar valores nulos.
-3.3 Identificar e tratar outliers.
-3.4 Visualizar relações e correlações entre variáveis.
+## 3. Carregamento, Visualização Inicial e Transformação dos Dados
+3.1 Carregar os dados e visualizar as primeiras linhas.
+3.2 Realizar as transformações individuais.
+3.3 Identificar e tratar valores nulos.
 
-## 4. Pré-processamento e Engenharia de Features
-4.1 Conversão de tipos de dados (categóricos para numéricos, etc.).
-4.2 Criação de novas features baseadas em insights da EDA.
-4.3 Normalização ou padronização de features, se necessário.
+## 4. Análise Exploratória de Dados (EDA)
+4.1 Visualizar correlação direta entre cada Feature e Target.
+4.2 Analisar estatísticas descritivas e distribuições.
+4.3 Identificar e tratar inconsistências e outliers.
+4.4 Visualizar relações e correlações entre variáveis.
 
 ## 5. Hipóteses e Testes Estatísticos
 5.1 Formular e documentar hipóteses.
 5.2 Realizar testes estatísticos para validar ou refutar hipóteses.
 
-## 6. Modelagem
-6.1 Dividir os dados em conjuntos de treino e teste.
-6.2 Selecionar e treinar modelos iniciais.
-6.3 Avaliar e comparar o desempenho dos modelos.
-6.4 Ajuste de hiperparâmetros e otimização.
+## 6. Pré-processamento e Engenharia de Features
+6.1 Criação de novas features baseadas em insights da EDA.
+6.2 Normalização ou padronização de features, se necessário.
 
-## 7. Avaliação Final e Implementação
-7.1 Avaliar o modelo final em um conjunto de teste ou validação.
-7.2 Interpretar os resultados e métricas.
-7.3 Implementar o modelo para fazer previsões em novos dados.
+## 7. Modelagem
+7.1 Dividir os dados em conjuntos de treino e teste.
+7.2 Selecionar e treinar modelos iniciais.
+7.3 Avaliar e comparar o desempenho dos modelos.
+7.4 Ajuste de hiperparâmetros e otimização.
+
+## 8. Avaliação Final e Implementação
+8.1 Avaliar o modelo final em um conjunto de teste ou validação.
+8.2 Interpretar os resultados e métricas.
+8.3 Implementar o modelo para fazer previsões em novos dados.
 
 ## 8. Documentação e Iteração
 8.1 Documentar todo o processo, decisões, resultados e métricas.
