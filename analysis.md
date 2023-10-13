@@ -1,51 +1,50 @@
 # Método
 
-# Metodologia de Machine Learning
-
-## 1. Definição do Problema e Estratégia
-1.1 Definir claramente o problema e o objetivo.
-1.2 Entender o que os dados representam e suas características.
-1.3 Propor uma solução inicial.
+## 1. Problem Definition and Strategy
+1.1 Clearly define the problem and objective.
+1.2 Understand what the data represents and its characteristics.
+1.3 Propose an initial solution.
 
 ## 2. Gather the Data
-2.1 Procurar os dados (datasets)
-2.2 Definir o tipo de dados
-2.3 Prepará-los para importação nos notebooks
+2.1 Seek out the data (datasets)
+2.2 Define the data type
+2.3 Prepare them for import into notebooks
 
-## 3. Carregamento, Visualização Inicial e Transformação dos Dados
-3.1 Carregar os dados e visualizar as primeiras linhas.
-3.2 Realizar as transformações individuais.
-3.3 Identificar e tratar valores nulos.
+## 3. Data Loading, Initial Visualization, and Transformation
+3.1 Load the data and visualize the first few rows.
+3.2 Perform individual transformations.
+3.3 Identify and handle null values.
 
-## 4. Análise Exploratória de Dados (EDA)
-4.1 Visualizar correlação direta entre cada Feature e Target.
-4.2 Analisar estatísticas descritivas e distribuições.
-4.3 Identificar e tratar inconsistências e outliers.
-4.4 Visualizar relações e correlações entre variáveis.
+## 4. Exploratory Data Analysis (EDA)
+4.1 Visualize direct correlation between each Feature and Target.
+4.2 Analyze descriptive statistics and distributions.
+4.3 Identify and handle inconsistencies and outliers.
+4.4 Visualize relationships and correlations between variables.
 
-## 5. Hipóteses e Testes Estatísticos
-5.1 Formular e documentar hipóteses.
-5.2 Realizar testes estatísticos para validar ou refutar hipóteses.
+## 5. Hypotheses and Statistical Testing
+5.1 Formulate and document hypotheses.
+5.2 Perform statistical tests to validate or refute hypotheses.
 
-## 6. Pré-processamento e Engenharia de Features
-6.1 Criação de novas features baseadas em insights da EDA.
-6.2 Normalização ou padronização de features, se necessário.
+## 6. Pre-processing and Feature Engineering
+6.1 Create new features based on EDA insights.
+6.2 Normalize or standardize features, if necessary.
 
-## 7. Modelagem
-7.1 Dividir os dados em conjuntos de treino e teste.
-7.2 Selecionar e treinar modelos iniciais.
-7.3 Avaliar e comparar o desempenho dos modelos.
-7.4 Ajuste de hiperparâmetros e otimização.
+## 7. Modeling
+7.1 Split the data into training and testing sets.
+7.2 Select and train initial models.
+7.3 Evaluate and compare the performance of the models.
+7.4 Hyperparameter tuning and optimization.
 
-## 8. Avaliação Final e Implementação
-8.1 Avaliar o modelo final em um conjunto de teste ou validação.
-8.2 Interpretar os resultados e métricas.
-8.3 Implementar o modelo para fazer previsões em novos dados.
+## 8. Final Evaluation and Implementation
+8.1 Evaluate the final model on a testing or validation set.
+8.2 Interpret results and metrics.
+8.3 Implement the model to make predictions on new data.
 
-## 8. Documentação e Iteração
-8.1 Documentar todo o processo, decisões, resultados e métricas.
-8.2 Revisar a metodologia e identificar áreas de melhoria.
-8.3 Iterar: voltar a etapas anteriores se necessário para refinar a análise e o modelo.
+## 9. Documentation and Iteration
+9.1 Document the entire process, decisions, results, and metrics.
+9.2 Review the methodology and identify areas for improvement.
+9.3 Iterate: return to previous steps if necessary to refine the analysis and model.
+
 
 ---
 
