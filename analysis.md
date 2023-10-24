@@ -1,19 +1,23 @@
 # Método
 
-## 1. Problem Definition and Strategy
+# 1. Problem Definition and Strategy
 1.1 Clearly define the problem and objective.
 1.2 Understand what the data represents and its characteristics.
 1.3 Propose an initial solution.
 
 ## 2. Gather the Data
 2.1 Seek out the data (datasets)
-2.2 Define the data type
+2.2 Take a first look at the data
 2.3 Prepare them for import into notebooks
 
 ## 3. Data Loading, Initial Visualization, and Transformation
-3.1 Load the data and visualize the first few rows.
-3.2 Perform individual transformations.
-3.3 Identify and handle null values.
+### 3.1 Load the data and visualize the first few rows.
+df.shape
+df.head()
+df.info()
+
+### 3.2 Perform individual transformations.
+### 3.3 Identify and handle null values.
 
 ## 4. Exploratory Data Analysis (EDA)
 4.1 Visualize direct correlation between each Feature and Target.
